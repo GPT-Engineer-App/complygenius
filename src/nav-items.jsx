@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Home, ClipboardCheck, FileText } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -6,9 +6,21 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Home",
+    title: "Dashboard",
     to: "/",
     icon: <Home className="h-4 w-4" />,
+    page: <Index />,
+  },
+  {
+    title: "Compliance Tracker",
+    to: "/compliance",
+    icon: <ClipboardCheck className="h-4 w-4" />,
+    page: <Index />,
+  },
+  {
+    title: "Document Management",
+    to: "/documents",
+    icon: <FileText className="h-4 w-4" />,
     page: <Index />,
   },
 ];
